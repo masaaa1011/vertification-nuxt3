@@ -11,5 +11,9 @@
   "volta": {
     "node": "17.8.0",
     "npm": "8.6.0"
+  },
+  "dependencies": {
+    "@types/shopify-buy": "^2.10.10",
+    "shopify-buy": "^2.14.0"
   }
 }
