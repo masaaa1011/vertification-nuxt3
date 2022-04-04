@@ -24,9 +24,8 @@ jobs:
         with:
           node-version: '17'
           cache: npm
-        
-      - name: Set Up Npm
-        run: npm install npm@8.6.0
+      - run: npm install
+      - run: npm install npm@8.6.0
       
       - name: Build And Deploy
         id: builddeploy
