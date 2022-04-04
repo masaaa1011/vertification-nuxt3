@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxt/bridge": "^0.10.1",
+    "@nuxt/kit": "^0.8.1-edge",
     "nuxi": "^0.10.1"
   }
 }
