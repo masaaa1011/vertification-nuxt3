@@ -9,6 +9,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
+    "@nuxt/bridge": "^0.10.1",
     "nuxi": "^0.10.1"
   }
 }
