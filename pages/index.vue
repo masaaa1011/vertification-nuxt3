@@ -2,15 +2,14 @@
 export default {
   data: () => {
     return {
-      message: 'Hello Nuxt!'
-    }
-  }
-}
+      message: "Hello Nuxt!",
+    };
+  },
+};
 </script>
+
 <template>
   <div>
-    {{message}}
+    {{ message }}
   </div>
 </template>
-<style>
-</style>
