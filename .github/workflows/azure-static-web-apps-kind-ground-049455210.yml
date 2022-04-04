@@ -28,7 +28,7 @@ jobs:
       - run: npm install nuxi
       - run: npm run build
 
-      - run: ls
+      - run: ls -a
       
       - name: Deploy
         id: deploy
