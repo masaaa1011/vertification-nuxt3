@@ -27,6 +27,8 @@ jobs:
           cache: npm
       - run: npm install nuxi
       - run: npm run build
+
+      - run: ls
       
       - name: Deploy
         id: deploy
@@ -39,7 +41,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "/.output/" # Built app content directory - optional
+          output_location: ".output/" # Built app content directory - optional
           skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
