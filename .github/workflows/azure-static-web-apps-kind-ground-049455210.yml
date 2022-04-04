@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: '17'
           cache: npm
+      - run: npm install nuxi
       - run: npm run build
       
       - name: Deploy
