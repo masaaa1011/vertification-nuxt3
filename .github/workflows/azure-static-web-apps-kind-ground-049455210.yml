@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: Set Up Environment
-        run: npm install nuxi
+        run: npm install npm@8.6.0
       
       - name: Build And Deploy
         id: builddeploy
