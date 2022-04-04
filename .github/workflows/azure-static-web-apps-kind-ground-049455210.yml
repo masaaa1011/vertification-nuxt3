@@ -18,7 +18,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Set Up Environment
+
+      - name: Set Up Node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+          cache: npm
+        
+      - name: Set Up Npm
         run: npm install npm@8.6.0
       
       - name: Build And Deploy
