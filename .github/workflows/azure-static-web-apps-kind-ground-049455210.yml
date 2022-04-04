@@ -19,15 +19,14 @@ jobs:
         with:
           submodules: true
 
-      - name: Set Up Node
+      - name: Build
         uses: actions/setup-node@v2
         with:
           node-version: '17'
           cache: npm
-      - run: npm install
-      - run: npm install npm@8.6.0
+      - run: npm run build
       
-      - name: Build And Deploy
+      - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -38,7 +37,8 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "/.output/" # Built app content directory - optional
+          output_location: "" # Built app content directory - optional
+          skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
