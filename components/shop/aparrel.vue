@@ -1,7 +1,13 @@
 <script>
-import { adminApiClient } from "~~/composables/shopify/core/client";
+// import { accessApiClient } from "@/composables/shopify/core/client";
+// const products = accessApiClient.query({
+//     data: `{
+//         products{
+//         }
+//     }`,
+// })
 
-const context = adminApiClient
+// console.log(JSON.stringify(products))
 </script>
 
 <template>

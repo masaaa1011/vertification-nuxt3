@@ -20,5 +20,15 @@ export default defineNuxtConfig({
             admin_api_secret_key: process.env.ADMIN_API_SECRET_KEY,
             admin_scopes: process.env.ADMIN_SCOPES,
         },
+    },
+    vite: {
+        build: {
+            sourcemap: true,
+        }
+    },
+    vue: {
+        compilerOptions: {
+            sourceMap: true,
+        }
     }
 })

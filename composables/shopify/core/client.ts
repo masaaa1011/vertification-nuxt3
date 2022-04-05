@@ -1,6 +1,7 @@
 import Shopify from "@shopify/shopify-api";
 
-const { SHOP, ACCESS_API_KEY, ACCESS_API_SECRET_KEY, ACCESS_SCOPES, HOST } = process.env;
-const adminApiClient = new Shopify.Clients.Rest(SHOP, ACCESS_API_KEY);
+const { SHOP, ACCESS_API_KEY, ADMIN_API_KEY } = process.env;
+const accessApiClient = new Shopify.Clients.Graphql(SHOP, ACCESS_API_KEY);
+const adminApiClient = new Shopify.Clients.Graphql(SHOP, ADMIN_API_KEY);
 
-export { adminApiClient }
+export { accessApiClient, adminApiClient }
