@@ -13,7 +13,6 @@
     "npm": "8.6.0"
   },
   "dependencies": {
-    "@types/shopify-buy": "^2.10.10",
-    "shopify-buy": "^2.14.0"
+    "@shopify/shopify-api": "^3.0.0"
   }
 }
