@@ -2,15 +2,18 @@
 export default {
   data: () => {
     return {
-      message: 'check out!'
-    }
-  }
-}
+      message: "check out!",
+    };
+    definePageMeta({
+      middleware: ["shopify"], // もしくは 'auth'
+      // middleware: 'auth',
+    });
+  },
+};
 </script>
 <template>
   <div>
-    {{message}}
+    {{ message }}
   </div>
 </template>
-<style>
-</style>
+<style></style>

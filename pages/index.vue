@@ -1,5 +1,6 @@
 <script>
 import Aparrel from "../components/shop/aparrel.vue";
+
 export default {
   data: () => {
     return {
