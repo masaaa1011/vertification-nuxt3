@@ -8,13 +8,13 @@ export default defineNuxtConfig({
     },
     publicRuntimeConfig: {
         url: process.env.SHOP,
-        access_api_key: process.env.ACCESS_API_KEY,
-        access_api_secret_key: process.env.ACCESS_API_SECRET_KEY,
+        api_key: process.env.API_KEY,
+        api_secret_key: process.env.API_SECRET_KEY,
+        access_token: process.env.ACCESS_API_TOKEN,
         access_scopes: process.env.ACCESS_SCOPES,
     },
     privateRuntimeConfig: {
-        admin_api_key: process.env.ADMIN_API_KEY,
-        admin_api_secret_key: process.env.ADMIN_API_SECRET_KEY,
+        admin_token: process.env.ADMIN_TOKEN,
         admin_scopes: process.env.ADMIN_SCOPES,
     },
     vite: {
@@ -26,5 +26,5 @@ export default defineNuxtConfig({
         compilerOptions: {
             sourceMap: true,
         }
-    }
+    },
 })
